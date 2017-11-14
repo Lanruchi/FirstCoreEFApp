@@ -1,7 +1,7 @@
-﻿using System.Linq;
-using App.Core.DomainEntitity;
+﻿using App.Data;
+using System.Linq;
 
-namespace App.Core
+namespace App.Repo
 {
     public interface IRepository<T> where T : BaseEntity
     {
@@ -12,5 +12,6 @@ namespace App.Core
         void Insert(T entity);
         void Update(T entity);
         void Delete(T entity);
+        void SaveChanges();
     }
 }

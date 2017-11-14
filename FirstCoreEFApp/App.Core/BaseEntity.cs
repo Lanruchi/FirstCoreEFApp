@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace App.Core.DomainEntitity
+namespace App.Data
 {
     public class BaseEntity
     {

@@ -1,13 +1,12 @@
-﻿using App.Core.DomainEntitity;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace App.Core.DomainEntitities
+namespace App.Data
 {
     public class Author : BaseEntity
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public virtual ICollection<Books> Books { get; set; }
+        public virtual ICollection<Book> Books { get; set; }
     }
 }
